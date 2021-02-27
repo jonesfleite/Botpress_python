@@ -1,4 +1,4 @@
-# action-server-example-python
+
 
 Action Server example, written in Python
 
@@ -19,3 +19,4 @@ Now deploy the app:
 2. `heroku create`
 3. `git push heroku master`
 4. Set the `BOTPRESS_SERVER_URL` to the public URL of your Botpress server, e.g. `https://34.56.178.34:3000` or `https://botpress.mydomain.com`, using the following command: `heroku config:set BOTPRESS_SERVER_URL={your Botpress server URL}`
+
