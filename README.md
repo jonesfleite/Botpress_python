@@ -1,22 +1,19 @@
+Exemplo do Action Server, escrito em Python
 
+## Desdobramento, desenvolvimento
 
-Action Server example, written in Python
+Abaixo você encontrará instruções para implantar este exemplo do Action Server no Heroku.
 
-## Deployment
+Pré-requisitos:
 
-Below you will find instructions to deploy this Action Server example to Heroku.
-
-Prerequisites:
-
-- Install the Heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
-- Create a Heroku account (if you don't have one already)
-- Clone this repository: `git clone git@github.com:botpress/action-server-example-python.git`
+- Instale o Heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
+- Crie uma conta Heroku (se ainda não tiver uma)
+- Clone este repositório: `git clone git@github.com: botpress / action-server-example-python.git`
 - `cd action-server-example-python`
 
-Now deploy the app:
+Agora implante o aplicativo:
 
-1. `heroku login`
+1. `login do heroku`
 2. `heroku create`
 3. `git push heroku master`
-4. Set the `BOTPRESS_SERVER_URL` to the public URL of your Botpress server, e.g. `https://34.56.178.34:3000` or `https://botpress.mydomain.com`, using the following command: `heroku config:set BOTPRESS_SERVER_URL={your Botpress server URL}`
-
+4. Defina o `BOTPRESS_SERVER_URL` para a URL pública de seu servidor Botpress, por exemplo, `https: //34.56.178.34: 3000` ou` https: // botpress.mydomain.com`, usando o seguinte comando: `heroku config: set BOTPRESS_SERVER_URL = {sua URL do servidor Botpress}`
