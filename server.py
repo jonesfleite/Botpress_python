@@ -45,27 +45,27 @@ def hello():
 @app.route("/actions/<bot_id>", methods=["GET"])
 def actions(bot_id):
     logging.info(f"Requesting actions for bot {bot_id}")
-    # Here, bot_it is unused, but you could use it to restrict the list of actions
-    # allowed, based on the requesting bot id
+    # Aqui, bot_it não é usado, mas você pode usá-lo para restringir a lista de ações
+    # permitido, com base no ID do bot solicitante
 
     return jsonify(
         [
             {
                 "name": "list_employees",
-                "description": "Lists employees",
+                "description": "Lista funcionários",
                 "category": "HR",
                 "params": [],
             },
             {
                 "name": "get_employee",
-                "description": "Get details of an employee",
+                "description": "Obtenha detalhes de um funcionário",
                 "category": "HR",
                 "params": [
                     {
                         "name": "employee_id",
                         "type": "string",
                         "required": True,
-                        "description": "The unique identifier for the employee to get",
+                        "description": "O identificador único para o funcionário obter",
                     }
                 ],
             },
@@ -92,7 +92,7 @@ def run_action():
             json={
                 "event": incoming_event,
                 "payloads": [
-                    {"type": "text", "text": "OK, Python server is listing employees"}
+                    {"type": "text", "text": "OK, O servidor Python está listando funcionários"}
                 ],
             },
             headers={"Authorization": f"bearer {token}"},
